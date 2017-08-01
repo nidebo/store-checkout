@@ -12,7 +12,7 @@ npm install
 ```
 ### Build
 ```
-npm build
+npm run build
 ```
 ### Run
 
