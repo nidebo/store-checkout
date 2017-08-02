@@ -17,7 +17,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 var _store = new WeakMap();
 var _pricingRules = new WeakMap();
 var _cart = new WeakMap();
-var _currency = new WeakMap();
 
 var Checkout = function () {
   function Checkout(pricingRules) {
@@ -50,7 +49,6 @@ var Checkout = function () {
   }, {
     key: 'total',
     value: function total() {
-      var currency = _currency.get(this);
       var cart = _cart.get(this);
       var store = _store.get(this);
       var pricingRules = _pricingRules.get(this);

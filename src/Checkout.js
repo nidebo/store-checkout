@@ -3,7 +3,6 @@ import PricingRules from './PricingRules'
 const _store = new WeakMap()
 const _pricingRules = new WeakMap()
 const _cart = new WeakMap()
-const _currency = new WeakMap()
 
 export default class Checkout {
   constructor(pricingRules) {
@@ -31,7 +30,6 @@ export default class Checkout {
   }
 
   total() {
-    const currency = _currency.get(this)
     const cart = _cart.get(this)
     const store = _store.get(this)
     const pricingRules = _pricingRules.get(this)
